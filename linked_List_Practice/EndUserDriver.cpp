@@ -18,8 +18,12 @@ int main()
 	third->value = 3;
 	third->Next = NULL;
 
+	l.insertAtFront(&head, 0);
 	l.insertAtFront(&head, -1);
 	l.insertAtFront(&head, -2);
+	l.insertAtFront(&head, -3);
+	l.insertAtFront(&head, -4);
+	l.insertAtEnd(&head, 4);
 	l.printList(head);
 
 	return 0;

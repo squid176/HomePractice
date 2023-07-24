@@ -20,3 +20,27 @@ void LinkedList::insertAtFront(Node** h, int newValue) // this is a pointer to p
 
 	*h = newNode;
 }
+
+void LinkedList::insertAtEnd(Node** h, int newValue)
+{
+	Node* newNode = new Node();
+	newNode->value = newValue;
+	newNode->Next = NULL;
+
+	if (*h == NULL)
+	{
+		*h = newNode;
+
+		return;
+	}
+
+	Node* last = *h;
+
+	while (last->Next != NULL)
+	{
+		last = last->Next;
+	}
+
+	last->Next = newNode;
+
+}
