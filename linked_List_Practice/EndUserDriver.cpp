@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-	Node* head = new Node();
-	Node* second = new Node();
-	Node* third = new Node();
+	Node* head = new Node;
+	Node* second = new Node;
+	Node* third = new Node;
 	
 	LinkedList l;
 
@@ -18,6 +18,7 @@ int main()
 	third->value = 3;
 	third->Next = NULL;
 
+	l.insertAfter(&head);
 	l.insertAtFront(&head, 0);
 	l.insertAtFront(&head, -1);
 	l.insertAtFront(&head, -2);
